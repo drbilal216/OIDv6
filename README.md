@@ -1,18 +1,18 @@
-# Clone repositry
+### Clone repositry
 git clone https://github.com/drbilal216/OIDv6
 
-# change directory
+### change directory
 cd OIDv6
 
-# Download (oidv6-train-annotations-bbox.csv) from below link (V6,Annotations and metadata,Boxes,Train) and put it in .\OIDv6\oidv6\boxes
+### Download (oidv6-train-annotations-bbox.csv) from below link (V6,Annotations and metadata,Boxes,Train) and put it in .\OIDv6\oidv6\boxes
 https://storage.googleapis.com/openimages/web/download_v6.html
 
-# Download with this command
+### Download with this command
 oidv6 downloader en --dataset oidv6 --type_data train --classes Hat Watch --limit 10 --yes
 
-# update classes name in root file classes.txt
+### update classes name in root file classes.txt
 
-# Convert annotation in darknet format(You can delete old label folder folder after that)
+### Convert annotation in darknet format(You can delete old label folder folder after that)
 python convert_annotations.py
 
 # Download single or multiple classes from the OIDv6
